@@ -1,0 +1,27 @@
+{
+    "manifest_version": 2,
+    "name": "UD Launcher",
+    "description": "Shortcut for UD Links",
+    "version": "1.0.0",
+    "icons": {
+        "128": "icon128.png"
+    },
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "https://corona.lmao.ninja/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "popup.js",
+                "chart.js"
+            ]
+        }
+    ]
+}
