@@ -14,13 +14,13 @@
             for (var i = 0; i < data.length; i++) {
                 recoveredSumFromAllCountries += data[i]['recovered']
             }
-            document.getElementById('display1').innerHTML = "Recovered after summing all countries' data from https://corona.lmao.ninja/v2/countries = <b>" + recoveredSumFromAllCountries + "</b>"
+            document.getElementById('display1').innerHTML = "'Recovered#' after summing all countries' data from https://corona.lmao.ninja/v2/countries = <b>" + recoveredSumFromAllCountries + "</b>"
         })
 
         fetch('https://corona.lmao.ninja/v2/all').then((response) => {
             return response.json();
         }).then((data) => {
-            document.getElementById('display2').innerHTML = "Recovered from https://corona.lmao.ninja/v2/all response = <b>" + data['recovered'] + "</b>"
+            document.getElementById('display2').innerHTML = "'Recovered#' from https://corona.lmao.ninja/v2/all response = <b>" + data['recovered'] + "</b>"
         })
     </script>
 </body>
